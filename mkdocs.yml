@@ -45,7 +45,8 @@ theme:
     - navigation.top
     - navigation.tabs
     - header.autohide
-    - toc.follow
+    - toc.integrate
+    - navigation.path
 
 plugins:
   - tags

@@ -1,0 +1,86 @@
+site_name: Arhiva - Subiecte Olimpiade
+site_description: O arhiva cu subiecte de olimpiada la mai multe materii
+
+
+markdown_extensions:
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - admonition
+  - def_list
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      toc_depth: 4
+
+
+theme:
+  name: material
+  font:
+    main: Inter
+    code: JetBrains Mono
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+      primary: black
+      accent: purple
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+      primary: black
+      accent: purple
+  features:
+    - navigation.top
+    - navigation.tabs
+    - header.autohide
+    - toc.follow
+
+plugins:
+  - tags
+
+extra_javascript:
+  - extra/extra.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap
+  - extra/extra.css
+
+
+nav:
+  - Informatică: https://kilonova.ro
+  - Matematică:
+      - Olimpiada Județeană de Matematică (OJM):
+          - Clasa a 5-a: matematica/OJM/a5a.md
+          - Clasa a 6-a: matematica/OJM/a6a.md
+          - Clasa a 7-a: matematica/OJM/a7a.md
+          - Clasa a 8-a: matematica/OJM/a8a.md
+          - Clasa a 9-a: matematica/OJM/a9a.md
+          - Clasa a 10-a: matematica/OJM/a10a.md
+          - Clasa a 11-a: matematica/OJM/a11a.md
+          - Clasa a 12-a: matematica/OJM/a12a.md
+      - Olimpiada Națională de Matematică (ONM):
+          - Clasa a 5-a: matematica/ONM/a5a.md
+          - Clasa a 6-a: matematica/ONM/a6a.md
+          - Clasa a 7-a: matematica/ONM/a7a.md
+          - Clasa a 8-a: matematica/ONM/a8a.md
+          - Clasa a 9-a: matematica/ONM/a9a.md
+          - Clasa a 10-a: matematica/ONM/a10a.md
+          - Clasa a 11-a: matematica/ONM/a11a.md
+          - Clasa a 12-a: matematica/ONM/a12a.md
+
+  - Fizică:
+      - Hmm: fizica/wooo.md
+
